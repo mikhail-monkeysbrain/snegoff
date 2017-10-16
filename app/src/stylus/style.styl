@@ -1,0 +1,342 @@
+@import helpers
+@import variables
+
+*
+	box-sizing border-box
+	margin 0
+	padding 0
+	font-family "Tahoma"
+
+html
+	margin 0
+	padding 0
+	font-size 1vw
+	
+body
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-direction column
+	justify-content space-between
+	min-height 100vh
+
+
+h1
+	color #2e4b65
+	font-size 90px
+	font-size 4.8rem
+	font-weight 400
+	text-transform uppercase
+	line-height 2
+h2
+	color #2e4b65
+	font-size 45px
+	font-size 2.4rem
+	font-weight 400
+	text-transform uppercase
+	line-height 2
+	
+.btn
+	width 262px
+	width 14rem
+	height 57px
+	height 3rem
+	background url('../img/button.png') center no-repeat
+	background-size 100%
+	border 0
+	outline 0
+	color #ffffff
+	font-size 28px
+	font-size 1.5rem
+	font-weight 400
+	text-transform uppercase
+	line-height 2
+	margin 1rem 0
+	text-align center
+	text-decoration none
+	opacity .8
+	transition animation
+	&:hover
+		opacity 1
+	&__builder
+		margin-top 5rem
+
+ul
+	display flex
+	align-items center
+	li
+		list-style none
+
+input
+	&::placeholder
+		transition animation
+	&:focus
+		&::placeholder
+			color transparent 
+	
+img
+	width 100%
+
+footer
+	width 100%
+	max-width 1500px
+	margin 0 auto
+	img
+		width 90%
+		margin 0 5%
+		
+header
+	width 100%
+	background url('../img/bg--header.jpg') top center no-repeat
+	background-size 100%
+	z-index 1
+	img
+		width 100% 
+		
+p
+	color #fff
+	font-size 1.2rem
+
+
+
+.nav
+	max-width 1500px
+	width 90%
+	margin 0 auto
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	align-items center
+	height 110px
+	height 6rem
+	&--item
+		a
+			color #fff
+			font-size 22px
+			font-size 1.24rem
+			font-weight 400
+			text-transform uppercase
+			text-decoration none
+			transition animation
+			&:hover
+				color #2f65a6
+		&:nth-child(2)
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content center
+			align-items center
+			&::before
+				content ''
+				width 34px
+				width 2.1rem
+				height 32px
+				height 2rem
+				background url('../img/home.png') center no-repeat
+				background-size cover
+				display block
+				margin-right 11px
+		&:nth-child(7)
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content center
+			align-items center
+			&::before
+				content ''
+				width 34px
+				width 2.1rem
+				height 32px
+				height 2rem
+				background url('../img/tel.png') center no-repeat
+				background-size cover
+				display block
+				margin-right 11px
+.logo
+	width 279px
+	width 17rem
+	position relative
+	height 100%
+	img
+		position absolute
+		top 0
+		z-index 1
+		
+section
+	position relative
+.section
+	&--top
+		background url('../img/top--bg.jpg') center no-repeat
+		background-size 100%
+		height 973px
+		height 50rem
+		margin-bottom -80px
+		margin-bottom -5rem
+		margin-top -7rem
+	&__separator
+		background url('../img/separator.png') center no-repeat
+		background-size 100%
+		height 351px
+		height 18rem
+		z-index 2
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+	&--hits
+		background url('../img/bg--hit.jpg') center no-repeat
+		background-size 100%
+		height 1029px
+		height 50rem
+		margin-top -80px
+		margin-top -5rem
+		margin-bottom -80px
+		margin-bottom -5rem
+		z-index 1
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content center
+		align-items center
+		img
+			width 65rem
+	&--builder
+		background url('../img/background-bottom.jpg') center no-repeat
+		background-size 100%
+		height 1393px
+		height 70rem
+		margin-top -280px
+		margin-top -14rem
+	&--benefits
+		section
+			max-width 70rem
+			width 100%
+			margin 0 auto
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content center
+			justify-content space-between
+		article
+			width 30%
+			position relative
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content center
+			align-items center
+			img
+				width 7rem
+				height 6.5rem
+				margin-right .7rem
+			p
+				font-size 1.25rem
+		
+.form
+	width 55rem
+	height 25rem
+	position absolute
+	bottom 0
+	background url('../img/dog.png') left bottom no-repeat
+	background-size contain
+	left 5rem
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content center
+	align-items center
+	img
+		margin-top 10rem
+.counter
+	width 15rem
+	height 8rem
+	position absolute
+	left 32rem
+	top 20rem
+	p,
+	#timer
+		text-transform uppercase
+		font-weight 600
+		text-align center
+		color #fff
+	#timer
+		font-size 2.8rem
+.matrix
+	z-index 2
+	width 68.7rem
+	position absolute
+	top 5.8rem
+	left 15.73rem
+	
+.nb-text
+	position absolute
+	z-index 2
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	flex-direction column
+	height 80%
+	top 0
+
+.basket
+	position absolute
+	width 304px
+	width 15rem
+	height 112px
+	height 5rem
+	background url(../img/basket.png) center no-repeat
+	background-size 100%
+	right 15rem
+	top 6rem
+	font-size 1rem
+	color #fff
+	padding 1.2rem 0 0 4.1rem
+	text-transform uppercase
+	text-decoration none 
+	
+input
+	border 0
+	outline 0
+	&.name
+		background url('../img/name.png')
+		background-size 100% 
+		width 19.5rem
+		height 4rem
+		padding-left 3.2rem
+		font-size 1.1rem
+		margin-top 10rem
+	&.tel
+		background url('../img/phone.png')
+		background-size 100%
+		width 19.5rem
+		height 4rem
+		margin-right .5rem
+		padding-left 3.2rem
+		font-size 1.1rem
+		margin-top 10rem
+	&.submit
+		width 15rem
+		height 4rem
+		font-size 1rem
+		margin-top 10.75rem
+		

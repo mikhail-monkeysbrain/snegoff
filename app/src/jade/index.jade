@@ -1,0 +1,59 @@
+include blocks/head
+	block content
+		header
+			ul.nav
+				li.logo.nav--item
+					a(href="#")
+						img(src="img/logo.png", alt="logo")
+				li.nav--item
+					a(href="#") Каталог
+				li.nav--item
+					a(href="#") Конструктор
+				li.nav--item
+					a(href="#") о компании 
+				li.nav--item
+					a(href="#") доставка и оплата 
+				li.nav--item
+					a(href="#") контакты
+				li.tel.nav--item
+					a(href="tel:89203150276") 8(920)315-02-76
+			a(href="").basket
+				| Перейти в корзину
+		section.section--top
+			.counter
+				p До нового года:
+				p.days
+				p.hours
+				p.minutes
+				p.seconds
+			form(action="#").form.form--top
+				input.name(type="text" placeholder="Введите Ваше имя")
+				input.tel(type="telephone" placeholder="Введите номер телефона")
+				input.btn.submit(type="submit" value="Получить консультацию")
+		section.section--benefits.section__separator
+			section
+				article.benefits--item
+					img(src="img/benefit-1.png", alt="benefit")
+					p Конструктор
+						br
+						| новогоднего подарка
+				article.benefits--item
+					img(src="img/benefit-2.png", alt="benefit")
+					p Бесплатная доставка
+						br
+						| по всей России!
+				article.benefits--item
+					img(src="img/benefit-3.png", alt="benefit")
+					p Скидки до 31 октября 
+		section.section--hits
+			img(src="img/goods.png", alt="goods")
+		section.section__separator 
+		section.section--builder
+			img.matrix(src="img/matrix.png", alt="matrix.png")
+			.nb-text
+				h1 только у нас
+				h2 Конструктор новогоднего подарка
+				h2 создайте подарок самостоятельно
+				a(href="").btn.btn__builder Конструктор
+
+	include blocks/footer 
