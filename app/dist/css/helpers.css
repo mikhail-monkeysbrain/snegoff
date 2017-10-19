@@ -49,6 +49,9 @@
 .text__lightgray {
   color: #a8a8a8 !important;
 }
+.text__black {
+  color: #000;
+}
 .flex {
   display: -webkit-box !important;
   display: -webkit-flex !important;
