@@ -7,6 +7,18 @@
 .float__clear {
   clear: both !important;
 }
+.size__semi {
+  width: 50% !important;
+}
+.size__third {
+  width: 33.33% !important;
+}
+.size__quard {
+  width: 25% !important;
+}
+.size__fifth {
+  width: 20% !important;
+}
 .text__left {
   text-align: left !important;
 }
@@ -52,12 +64,16 @@
 .text__black {
   color: #000;
 }
+.text__trought {
+  text-decoration: line-through;
+  color: #5b5b5b;
+}
 .flex {
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  width: 100% !important;
+  width: 100%;
 }
 .flex__y-center {
   -webkit-box-align: center !important;

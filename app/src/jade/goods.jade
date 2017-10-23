@@ -1,0 +1,54 @@
+include blocks/head
+	block content
+		header
+			ul.nav
+				li.logo.nav--item
+					a(href="#")
+						img(src="img/logo.png", alt="logo")
+				li.nav--item
+					a(href="#") Каталог
+				li.nav--item
+					a(href="#") Конструктор
+				li.nav--item
+					a(href="#") о компании 
+				li.nav--item
+					a(href="#") доставка и оплата 
+				li.nav--item
+					a(href="#") контакты
+				li.tel.nav--item
+					a(href="tel:89203150276") 8(920)315-02-76
+			a(href="").basket
+				| Перейти в корзину
+		section.section--top.section--top__nocounter
+			h1.page-h1 
+				|Каталог подарков
+		section.section--benefits.section__separator.section__separator__h2.flex.flex__x__between
+			.size__semi
+			.size__semi
+				h2.page-h2 ЩЕНОК ЛАККИ 
+		section.section--goods.flex.flex__x__between
+			.size__semi
+				img.goods--item(src="img/goods--item.jpg", alt="goods--item")
+			.size__semi
+				.goods--options
+					p.text__black.mass
+						img(src="img/mass.png", alt="mass")
+						| 700 гр.
+					p.text__black.box
+						img(src="img/box.png", alt="box")
+						| фетр (20х24х10см).
+					p.text__black.number
+						img(src="img/number.png", alt="number")
+						| 46 шт.
+				.goods--store
+					p.text__trought.text__black 415 руб.
+					p.price 347 р.
+					input(type="number" value="1")
+					button.btn.btn__buy В корзину
+				.br
+				p.text__black.size__semi Стоимость подарка зависит от региона доставки. Ваш регион: Смоленск Сумма минимального заказа: 20.000 руб.
+
+	section.section__separator.section__separator__end
+
+
+	include blocks/footer 

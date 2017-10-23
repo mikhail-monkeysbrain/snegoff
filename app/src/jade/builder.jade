@@ -1,0 +1,131 @@
+include blocks/head
+	block content
+		header
+			ul.nav
+				li.logo.nav--item
+					a(href="#")
+						img(src="img/logo.png", alt="logo")
+				li.nav--item
+					a(href="#") Каталог
+				li.nav--item
+					a(href="#") Конструктор
+				li.nav--item
+					a(href="#") о компании 
+				li.nav--item
+					a(href="#") доставка и оплата 
+				li.nav--item
+					a(href="#") контакты
+				li.tel.nav--item
+					a(href="tel:89203150276") 8(920)315-02-76
+			a(href="").basket
+				| Перейти в корзину
+		section.section--top.section--top__nocounter
+			h1.page-h1 
+				|Конструктор новогоднего подарка
+		section.section--benefits.section__separator.section__separator__h2
+			h2.page-h2 Вы можете собрать новогодний подарок сами
+		section.section--construct
+			.flex--table
+				.col
+					.row.row--header Выберите вес
+					.row.row--content.checkbox
+						input#check1(name="check" type="checkbox" value="check1")
+						label(for="check1") 150
+						input#check2(name="check" type="checkbox" value="check2")
+						label(for="check2") 250
+						input#check3(name="check" type="checkbox" value="check3")
+						label(for="check3") 350
+						input#check4(name="check" type="checkbox" value="check4")
+						label(for="check4") 450
+						input#check5(name="check" type="checkbox" value="check5")
+						label(for="check5") 550
+						input#check6(name="check" type="checkbox" value="check6")
+						label(for="check6") 650
+						input#check7(name="check" type="checkbox" value="check7")
+						label(for="check7") 750
+						input#check8(name="check" type="checkbox" value="check8")
+						label(for="check8") 850
+						input#check9(name="check" type="checkbox" value="check9")
+						label(for="check9") 950
+						input#check10(name="check" type="checkbox" value="check10")
+						label(for="check10") 1050
+						.br
+						img(src="img/tribute.jpg", alt="tribute")
+				.col 
+					.row.row--header Типы упаковок
+					.row.row--content.checkbox
+						input#check11(name="check" type="checkbox" value="check11")
+						label(for="check11") Картон
+						input#check12(name="check" type="checkbox" value="check12")
+						label(for="check12") Игрушка
+						input#check13(name="check" type="checkbox" value="check13")
+						label(for="check13") Ткань
+						.br
+						.checkbox.wrap
+							input#check111(name="check" type="checkbox" value="check111")
+							label(for="check111").pack 
+							input#check121(name="check" type="checkbox" value="check121")
+							label(for="check121").pack 
+							input#check131(name="check" type="checkbox" value="check131")
+							label(for="check131").pack 
+							input#check161(name="check" type="checkbox" value="check161")
+							label(for="check161").pack 
+							input#check162(name="check" type="checkbox" value="check162")
+							label(for="check162").pack 
+							input#check163(name="check" type="checkbox" value="check163")
+							label(for="check163").pack 
+							input#check164(name="check" type="checkbox" value="check164")
+							label(for="check164").pack 
+				.col
+					.row.row--header Выбор конфет
+					.row.row--content.checkbox
+						h4 Марка
+						input#check211(name="check" type="checkbox" value="check211")
+						label(for="check211") Фирма
+						input#check212(name="check" type="checkbox" value="check212")
+						label(for="check212") Фирма
+						input#check213(name="check" type="checkbox" value="check213")
+						label(for="check213") Фирма
+						.br
+						h4 Тип конфет
+						input#check411(name="check" type="checkbox" value="check411")
+						label(for="check411") Тип конфет
+						input#check412(name="check" type="checkbox" value="check412")
+						label(for="check412") Тип конфет
+						input#check413(name="check" type="checkbox" value="check413")
+						label(for="check413") Тип конфет
+						.br
+						.checkbox.wrap
+							input#check311(name="check" type="checkbox" value="check311")
+							label(for="check311").pack 
+							input#check321(name="check" type="checkbox" value="check321")
+							label(for="check321").pack 
+							input#check331(name="check" type="checkbox" value="check331")
+							label(for="check331").pack 
+							input#check341(name="check" type="checkbox" value="check341")
+							label(for="check341").pack 
+				.col
+					.row.row--header Итого
+					.row.row--content
+						h4 Вес итого
+						p.text__black 13кг.
+						.br
+						h4 Сумма итого
+						p.text__black 13000
+				.col
+					.row.row--header Количество
+					.row.row--content
+						h4 Количество таких подарков
+						p.text__black 1шт.
+				.col
+					.row.row--header Заказать
+					.row.row--content
+						h4 Общая сумма заказа
+						.br
+						p.summ 13000р.
+						.br
+						button.btn.btn__builder Заказать
+	section.section__separator.section__separator__end
+
+
+	include blocks/footer 
