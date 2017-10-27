@@ -355,6 +355,59 @@ section
 			width 100%
 			margin 0
 			font-size 1.1rem
+	&--table
+		max-width 1500px
+		width 90%
+		margin 3rem auto
+		&__head
+			height 4rem
+			background-color #f0b102
+			color #fff
+			line-height 4rem
+			margin 1rem 0
+			padding 0 1rem
+			font-family "Roboto Slab"
+			font-size 32px
+			font-weight 400
+			font-size 1.65rem
+		&--row
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-between
+			align-items left
+			align-items stretch
+			&:first-child
+				.section--table--col
+					font-weight 600
+					&:first-child
+						justify-content flex-start
+		&--col
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content center
+			align-items center
+			text-align center
+			flex-shrink 0
+			width 25%
+			text-align center
+			&:first-child
+				justify-content center
+				text-align left
+				width 45%
+				font-weight 600
+			img
+				width 169px
+				height 159px
+				width 11rem
+				height 10rem
+			p
+				color #000
 
 .form
 	width 55rem
@@ -678,11 +731,13 @@ input[type=checkbox]:checked + label.pack:before
 		background #fff
 		border-radius 2rem
 		border 7px solid #f5b500
-		max-width 40rem
-		margin-left 5rem
-		margin-top -15rem
+		max-width 33rem
+		margin-left 15rem
+		margin-top -10rem
 		position relative
 		z-index 3
+		+media(1400px)
+			margin-left 8rem
 	&--options
 		p
 			display -webkit-flex
@@ -751,3 +806,4 @@ button
 				
 .flex h2.page-h2
 	width auto
+	

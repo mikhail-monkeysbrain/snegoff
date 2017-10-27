@@ -613,6 +613,94 @@ section {
   margin: 0;
   font-size: 1.1rem;
 }
+.section--table {
+  max-width: 1500px;
+  width: 90%;
+  margin: 3rem auto;
+}
+.section--table__head {
+  height: 4rem;
+  background-color: #f0b102;
+  color: #fff;
+  line-height: 4rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  font-family: "Roboto Slab";
+  font-size: 32px;
+  font-weight: 400;
+  font-size: 1.65rem;
+}
+.section--table--row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.section--table--row:first-child .section--table--col {
+  font-weight: 600;
+}
+.section--table--row:first-child .section--table--col:first-child {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.section--table--col {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 25%;
+  text-align: center;
+}
+.section--table--col:first-child {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  width: 45%;
+  font-weight: 600;
+}
+.section--table--col img {
+  width: 169px;
+  height: 159px;
+  width: 11rem;
+  height: 10rem;
+}
+.section--table--col p {
+  color: #000;
+}
 .form {
   width: 55rem;
   height: 25rem;
@@ -1022,11 +1110,16 @@ input[type=checkbox]:checked + label.pack:before {
   background: #fff;
   border-radius: 2rem;
   border: 7px solid #f5b500;
-  max-width: 40rem;
-  margin-left: 5rem;
-  margin-top: -15rem;
+  max-width: 33rem;
+  margin-left: 15rem;
+  margin-top: -10rem;
   position: relative;
   z-index: 3;
+}
+@media screen and (max-width: 1400px) {
+  .goods--item {
+    margin-left: 8rem;
+  }
 }
 .goods--options p {
   display: -webkit-flex;
